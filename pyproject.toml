@@ -14,6 +14,10 @@ pandas = "^1.5.3"
 jupyterlab = "^3.6.1"
 matplotlib = "^3.7.1"
 opencv-python = "^4.7.0.72"
+openimages = "^0.0.1"
+awscli = "^1.27.89"
+ipywidgets = "^8.0.4"
+ipympl = "^0.9.3"
 
 
 [build-system]

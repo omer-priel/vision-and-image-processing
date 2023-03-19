@@ -1,5 +1,4 @@
-# Build
-
+# build
 clean-all: clean
 	rm -rf .venv poetry.lock
 

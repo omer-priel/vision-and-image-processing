@@ -3,7 +3,13 @@
 import matplotlib.pyplot as plt
 
 def show_img(disp_img):
-    show_imgs([disp_img])
+    dpi = plt.rcParams['figure.dpi']
+    fig_size = (disp_img.shape[0]/dpi, disp_img.shape[1]/dpi)
+    fig, ax = plt.subplots(1, figsize=fig_size)
+
+    ax.axis('off')
+    ax.imshow(disp_img)
+    plt.show()
 
 def show_imgs(disp_imgs, in_line = None, names = None):
     if not in_line:
